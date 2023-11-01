@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "883e83d3-80f5-491d-a8af-e5486eca5262",
+		"name": "students",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "1435435"
+	},
+	"item": [
+		{
+			"name": "post student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_name",
+							"value": "Ile",
+							"type": "text"
+						},
+						{
+							"key": "birthdate",
+							"value": "1975-12-14",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/Users/ilkkamtk/Documents/gitProjects/np2final/uploads/2020/06/kuvaJossaGPS.jpeg"
+						}
+					]
+				},
+				"url": "localhost:3000/api/v1/students"
+			},
+			"response": []
+		},
+		{
+			"name": "get students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/v1/students"
+			},
+			"response": []
+		},
+		{
+			"name": "get student",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "localhost:3000/api/v1/students/1"
+			},
+			"response": []
+		},
+		{
+			"name": "put student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"student_name\": \"Ilkka\",\n    \"birthdate\": \"1975-12-15\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "localhost:3000/api/v1/students/3434"
+			},
+			"response": []
+		},
+		{
+			"name": "delete student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "localhost:3000/api/v1/students/1"
+			},
+			"response": []
+		}
+	]
+}
