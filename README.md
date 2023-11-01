@@ -22,11 +22,12 @@ Similarly, in the test folder, you will find test files with TODO comments for e
 2. Go to https://users.metropolia.fi/phpMyAdmin and login with your database password you made in step 1.
 3. Go to SQL tab and run this query: https://gist.github.com/ilkkamtk/5ee689673e4717003561e29bef92d170
 4. Now you should have table 'students' in your database.
-5. Put your username and database password to `.env_sample`. Rename `.env_sample` to `.env`
-6. You need to use Metropolia VPN so your app can access the database server.
-7. Install dependencies: `npm i`
-8. Run app `npm run dev`
-9. Open postman and import [this](students.postman_collection.json) collection to try the app.
+5. Clone this repo and open the folder in VSCode
+6. Put your username and database password to `.env_sample`. Rename `.env_sample` to `.env`
+7. You need to use Metropolia VPN so your app can access the database server.
+8. Install dependencies: `npm i`
+9. Run app `npm run dev`
+10. Open postman and import [this](students.postman_collection.json) collection to try the app.
 
 ### NPM libraries needed for testing (Dev dependencies)
 
