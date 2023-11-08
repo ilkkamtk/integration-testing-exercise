@@ -4,6 +4,21 @@
  * @apiGroup Students
  *
  * @apiSuccess {Object[]} students List of students.
+ * @apiSuccess {Number} students.student_id Student's unique ID.
+ * @apiSuccess {String} students.student_name Student's name.
+ * @apiSuccess {String} students.filename Student's image filename.
+ * @apiSuccess {Date} students.birthdate Student's birthdate (YYYY-MM-DD).
+ *
+ *  @apiSuccessExample {json} Success-Response:
+ *   HTTP/1.1 200 OK
+ *   [
+ *     {
+ *       "student_id":11,
+ *       "student_name":"Seppo",
+ *       "filename":"3d58580f8c2442cd0452ff75ffff0972",
+ *       "birthdate":"1975-12-13T22:00:00.000Z"
+ *     }
+ *   ]
  *
  * @apiErrorExample {json} Error-Response:
  *   HTTP/1.1 404 Not Found
@@ -21,6 +36,7 @@
  *
  * @apiParam {String} student_name Student's name.
  * @apiParam {Date} birthdate Student's birthdate (YYYY-MM-DD).
+ * @apiParam {File} filename Student's image. Type: image/jpeg, image/png, image/gif.
  *
  * @apiSuccessExample {json} Success-Response:
  *   HTTP/1.1 200 OK
@@ -50,6 +66,19 @@
  * @apiParam {Number} id Student's unique ID.
  *
  * @apiSuccess {Object} student Student object.
+ * @apiSuccess {Number} student.student_id Student's unique ID.
+ * @apiSuccess {String} student.student_name Student's name.
+ * @apiSuccess {String} student.filename Student's image filename.
+ * @apiSuccess {Date} student.birthdate Student's birthdate (YYYY-MM-DD).
+ *
+ * @apiSuccessExample {json} Success-Response:
+ *   HTTP/1.1 200 OK
+ *   {
+ *     "student_id":11,
+ *     "student_name":"Seppo",
+ *     "filename":"3d58580f8c2442cd0452ff75ffff0972",
+ *     "birthdate":"1975-12-13T22:00:00.000Z"
+ *   }
  *
  * @apiErrorExample {json} Error-Response:
  *   HTTP/1.1 404 Not Found
