@@ -1,0 +1,30 @@
+<%- include('../partials/head'); %>
+    <%- include('../partials/header'); %>
+        <h1>Just testing</h1>
+        <p>List students</p>
+        <table>
+            <tbody>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Name</th>
+                    <th>Birthdate</th>
+                    <th>Image</th>
+                </tr>
+                <% data.students.forEach(function(student) { %>
+                    <tr>
+                        <td>
+                            <%= student.student_id %>
+                        </td>
+                        <td>
+                            <%= student.student_name %>
+                        </td>
+                        <td>
+                            <%= student.birthdate %>
+                        </td>
+                        <td><img src="/uploads/<%= student.filename %>" alt="Student image"></td>
+                    </tr>
+                    <% }); %>
+            </tbody>
+        </table>
+
+        <%- include('../partials/footer'); %>

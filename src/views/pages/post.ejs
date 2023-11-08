@@ -1,0 +1,14 @@
+<%- include('../partials/head'); %>
+    <%- include('../partials/header'); %>
+        <h1>Add students</h1>
+        <form id="uploadForm">
+            <input type="text" name="student_name" placeholder="Student name">
+            <input type="date" name="birthdate" placeholder="Birthdate">
+            <input type="file" name="image" placeholder="Image">
+            <button type="submit">Add</button>
+        </form>
+        <dialog>
+            <p id="message"></p>
+            <p>Press esc to close</p>
+        </dialog>
+        <%- include('../partials/footer'); %>
