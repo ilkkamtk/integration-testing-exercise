@@ -1,4 +1,4 @@
-# REST API integration testing.
+# REST API integration testing and end-to-end testing.
 
 ### API Documentation (APIDoc)
 
@@ -15,6 +15,10 @@ In the test folder, you will find test files with TODO comments for different AP
 #### 2. Testing Error Handling
 
 Similarly, in the test folder, you will find test files with TODO comments for error scenarios. Your goal is to complete these tests to validate that the API handles errors appropriately. The error tests cover various situations, including 404 errors, validation errors, and more.
+
+#### 3. End-to-End tests
+
+Also, in the test folder, you will find test files with TODO comments for end-to-end tests. Your goal is to test that the font page in `index.ejs` HTML has correct `<table>` structure (in comments) and that students can be uploaded with the form in `post.ejs`.
 
 ## How to run
 
